@@ -25,8 +25,8 @@
  */
 package jme3utilities.sky.textures;
 
-import com.beust.jcommander.JCommander;
-import com.beust.jcommander.Parameter;
+//import com.beust.jcommander.JCommander;
+//import com.beust.jcommander.Parameter;
 import com.jme3.math.FastMath;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -71,8 +71,8 @@ public class MakeRamps {
      * true means just display the usage message; false means run the
      * application
      */
-    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
-            description = "display this usage message")
+//    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
+//            description = "display this usage message")
     private static boolean usageOnly = false;
     /**
      * sample dome mesh for calculating texture coordinates
@@ -104,12 +104,13 @@ public class MakeRamps {
         /*
          * Parse the command-line arguments.
          */
-        JCommander jCommander = new JCommander(application, arguments);
+/*        JCommander jCommander = new JCommander(application, arguments);
         jCommander.setProgramName(applicationName);
         if (usageOnly) {
             jCommander.usage();
             return;
         }
+*/
         /*
          * Log the jME3-utilities version string and working directory.
          */

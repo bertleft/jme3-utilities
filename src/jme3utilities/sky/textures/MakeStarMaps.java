@@ -25,8 +25,8 @@
  */
 package jme3utilities.sky.textures;
 
-import com.beust.jcommander.JCommander;
-import com.beust.jcommander.Parameter;
+//import com.beust.jcommander.JCommander;
+//import com.beust.jcommander.Parameter;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector2f;
@@ -156,8 +156,8 @@ public class MakeStarMaps {
      * true means just display the usage message; false means run the
      * application
      */
-    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
-            description = "display this usage message")
+//    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
+//            description = "display this usage message")
     private static boolean usageOnly = false;
     /**
      * stars read from the catalog
@@ -170,7 +170,7 @@ public class MakeStarMaps {
     /**
      * name of preset
      */
-    @Parameter(names = {"-p", "--preset"}, description = "specify preset")
+//    @Parameter(names = {"-p", "--preset"}, description = "specify preset")
     private static String presetName = "all";
     // *************************************************************************
     // new methods exposed
@@ -198,19 +198,20 @@ public class MakeStarMaps {
         /*
          * Parse the command-line arguments.
          */
-        JCommander jCommander = new JCommander(application, arguments);
+/*        JCommander jCommander = new JCommander(application, arguments);
         jCommander.setProgramName(applicationName);
         if (usageOnly) {
             jCommander.usage();
             return;
         }
+*/
         if (!"all".equals(presetName)) {
             StarMapPreset preset = StarMapPreset.fromDescription(presetName);
             if (preset == null) {
                 /*
                  * invalid preset name
                  */
-                jCommander.usage();
+//                jCommander.usage();
                 return;
             }
         }

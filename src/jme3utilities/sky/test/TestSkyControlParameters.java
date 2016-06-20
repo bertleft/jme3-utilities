@@ -25,7 +25,7 @@
  */
 package jme3utilities.sky.test;
 
-import com.beust.jcommander.Parameter;
+//import com.beust.jcommander.Parameter;
 import java.util.logging.Logger;
 
 /**
@@ -47,33 +47,33 @@ class TestSkyControlParameters {
     /**
      * true means use the cyclone cloud map; false means use default cloud maps
      */
-    @Parameter(names = {"-c", "--cyclone"},
-            description = "use cyclone cloud map")
+//    @Parameter(names = {"-c", "--cyclone"},
+//            description = "use cyclone cloud map")
     private boolean cyclone = false;
     /**
      * true means use a shadow filter; false means use a shadow renderer
      */
-    @Parameter(names = {"-f", "--filter"},
-            description = "use a shadow filter")
+//    @Parameter(names = {"-f", "--filter"},
+//            description = "use a shadow filter")
     private boolean shadowFilter = false;
     /**
      * true means use just a single dome; false means use all five domes
      */
-    @Parameter(names = {"-s", "--single"},
-            description = "use just a single dome")
+//    @Parameter(names = {"-s", "--single"},
+//            description = "use just a single dome")
     private boolean singleDome = false;
     /**
      * true means just display the usage message; false means run the
      * application
      */
-    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
-            description = "display this usage message")
+//    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
+//            description = "display this usage message")
     private boolean usageOnly = false;
     /**
      * true means scene with water; false means no water
      */
-    @Parameter(names = {"-w", "--water"},
-            description = "scene with water")
+//    @Parameter(names = {"-w", "--water"},
+//            description = "scene with water")
     private boolean water = false;
     // *************************************************************************
     // new methods exposed

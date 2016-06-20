@@ -25,7 +25,7 @@
  */
 package jme3utilities.sky.test;
 
-import com.beust.jcommander.JCommander;
+//import com.beust.jcommander.JCommander;
 import com.jme3.app.state.ScreenshotAppState;
 import com.jme3.input.KeyInput;
 import com.jme3.light.AmbientLight;
@@ -183,12 +183,13 @@ public class TestSkyControl
         /*
          * Parse the command-line arguments into parameters.
          */
-        JCommander jCommander = new JCommander(parameters, arguments);
+/*        JCommander jCommander = new JCommander(parameters, arguments);
         jCommander.setProgramName(applicationName);
         if (parameters.usageOnly()) {
             jCommander.usage();
             return;
         }
+*/
         /*
          * Don't pause on lost focus.  This simplifies debugging and
          * permits the application to keep running while minimized.

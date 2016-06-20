@@ -25,8 +25,8 @@
  */
 package jme3utilities.sky.test;
 
-import com.beust.jcommander.JCommander;
-import com.beust.jcommander.Parameter;
+//import com.beust.jcommander.JCommander;
+//import com.beust.jcommander.Parameter;
 import com.jme3.app.state.ScreenshotAppState;
 import com.jme3.export.binary.BinaryExporter;
 import com.jme3.input.KeyInput;
@@ -117,13 +117,13 @@ public class TestSkyMaterial
      * true means just display the usage message; false means run the
      * application
      */
-    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
-            description = "display this usage message")
+//    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
+//            description = "display this usage message")
     private static boolean usageOnly = false;
     /**
      * name of material to test, or null to auto-select
      */
-    @Parameter(names = {"-m", "--material"}, description = "specify material")
+//    @Parameter(names = {"-m", "--material"}, description = "specify material")
     private static String materialName = null;
     /**
      * heads-up display (HUD)
@@ -153,12 +153,13 @@ public class TestSkyMaterial
         /*
          * Parse the command-line arguments.
          */
-        JCommander jCommander = new JCommander(application, arguments);
+/*        JCommander jCommander = new JCommander(application, arguments);
         jCommander.setProgramName(applicationName);
         if (usageOnly) {
             jCommander.usage();
             return;
         }
+*/
         /*
          * Don't pause on lost focus.  This simplifies debugging and
          * permits the application to keep running while minimized.

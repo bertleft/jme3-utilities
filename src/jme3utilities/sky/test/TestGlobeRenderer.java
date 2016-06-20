@@ -25,8 +25,8 @@
  */
 package jme3utilities.sky.test;
 
-import com.beust.jcommander.JCommander;
-import com.beust.jcommander.Parameter;
+//import com.beust.jcommander.JCommander;
+//import com.beust.jcommander.Parameter;
 import com.jme3.app.SimpleApplication;
 import com.jme3.app.state.ScreenshotAppState;
 import com.jme3.input.KeyInput;
@@ -89,8 +89,8 @@ public class TestGlobeRenderer
      * true means just display the usage message; false means run the
      * application
      */
-    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
-            description = "display this usage message")
+//    @Parameter(names = {"-h", "-u", "--help", "--usage"}, help = true,
+//            description = "display this usage message")
     private static boolean usageOnly = false;
     /**
      * globe renderer for the moon: set in simpleInitApp()
@@ -111,7 +111,7 @@ public class TestGlobeRenderer
     /**
      * name of initial phase (default is "full")
      */
-    @Parameter(names = {"-p", "--phase"}, description = "specify initial phase")
+//    @Parameter(names = {"-p", "--phase"}, description = "specify initial phase")
     private static String phaseName = "full";
     // *************************************************************************
     // new methods exposed
@@ -137,12 +137,13 @@ public class TestGlobeRenderer
         /*
          * Parse the command-line arguments.
          */
-        JCommander jCommander = new JCommander(application, arguments);
+/*        JCommander jCommander = new JCommander(application, arguments);
         jCommander.setProgramName(applicationName);
         if (usageOnly) {
             jCommander.usage();
             return;
         }
+*/
         /*
          * Don't pause on lost focus.  This simplifies debugging and
          * permits the application to keep running while minimized.
